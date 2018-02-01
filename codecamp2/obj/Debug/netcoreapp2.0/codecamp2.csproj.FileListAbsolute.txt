@@ -1,0 +1,10 @@
+C:\Users\Thai\Desktop\Git\codecamp2\bin\Debug\netcoreapp2.0\codecamp2.deps.json
+C:\Users\Thai\Desktop\Git\codecamp2\bin\Debug\netcoreapp2.0\codecamp2.runtimeconfig.json
+C:\Users\Thai\Desktop\Git\codecamp2\bin\Debug\netcoreapp2.0\codecamp2.runtimeconfig.dev.json
+C:\Users\Thai\Desktop\Git\codecamp2\bin\Debug\netcoreapp2.0\codecamp2.dll
+C:\Users\Thai\Desktop\Git\codecamp2\bin\Debug\netcoreapp2.0\codecamp2.pdb
+C:\Users\Thai\Desktop\Git\codecamp2\obj\Debug\netcoreapp2.0\codecamp2.csproj.CoreCompileInputs.cache
+C:\Users\Thai\Desktop\Git\codecamp2\obj\Debug\netcoreapp2.0\codecamp2.AssemblyInfoInputs.cache
+C:\Users\Thai\Desktop\Git\codecamp2\obj\Debug\netcoreapp2.0\codecamp2.AssemblyInfo.cs
+C:\Users\Thai\Desktop\Git\codecamp2\obj\Debug\netcoreapp2.0\codecamp2.dll
+C:\Users\Thai\Desktop\Git\codecamp2\obj\Debug\netcoreapp2.0\codecamp2.pdb

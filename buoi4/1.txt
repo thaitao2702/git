@@ -1,0 +1,9 @@
+cat
+dog
+idiot
+world
+strange
+iron man
+batman
+wonder woman
+black panther

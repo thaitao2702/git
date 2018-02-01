@@ -1,0 +1,10 @@
+C:\Users\Thai\Desktop\Git\buoi7\obj\Debug\netcoreapp2.0\buoi7.csproj.CoreCompileInputs.cache
+C:\Users\Thai\Desktop\Git\buoi7\obj\Debug\netcoreapp2.0\buoi7.AssemblyInfoInputs.cache
+C:\Users\Thai\Desktop\Git\buoi7\obj\Debug\netcoreapp2.0\buoi7.AssemblyInfo.cs
+C:\Users\Thai\Desktop\Git\buoi7\bin\Debug\netcoreapp2.0\buoi7.deps.json
+C:\Users\Thai\Desktop\Git\buoi7\bin\Debug\netcoreapp2.0\buoi7.runtimeconfig.json
+C:\Users\Thai\Desktop\Git\buoi7\bin\Debug\netcoreapp2.0\buoi7.runtimeconfig.dev.json
+C:\Users\Thai\Desktop\Git\buoi7\bin\Debug\netcoreapp2.0\buoi7.dll
+C:\Users\Thai\Desktop\Git\buoi7\bin\Debug\netcoreapp2.0\buoi7.pdb
+C:\Users\Thai\Desktop\Git\buoi7\obj\Debug\netcoreapp2.0\buoi7.dll
+C:\Users\Thai\Desktop\Git\buoi7\obj\Debug\netcoreapp2.0\buoi7.pdb

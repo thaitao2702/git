@@ -1,0 +1,10 @@
+C:\Users\Thai\Desktop\Git\linq\obj\Debug\netcoreapp2.0\linq.csproj.CoreCompileInputs.cache
+C:\Users\Thai\Desktop\Git\linq\obj\Debug\netcoreapp2.0\linq.AssemblyInfoInputs.cache
+C:\Users\Thai\Desktop\Git\linq\obj\Debug\netcoreapp2.0\linq.AssemblyInfo.cs
+C:\Users\Thai\Desktop\Git\linq\bin\Debug\netcoreapp2.0\linq.deps.json
+C:\Users\Thai\Desktop\Git\linq\bin\Debug\netcoreapp2.0\linq.runtimeconfig.json
+C:\Users\Thai\Desktop\Git\linq\bin\Debug\netcoreapp2.0\linq.runtimeconfig.dev.json
+C:\Users\Thai\Desktop\Git\linq\bin\Debug\netcoreapp2.0\linq.dll
+C:\Users\Thai\Desktop\Git\linq\bin\Debug\netcoreapp2.0\linq.pdb
+C:\Users\Thai\Desktop\Git\linq\obj\Debug\netcoreapp2.0\linq.dll
+C:\Users\Thai\Desktop\Git\linq\obj\Debug\netcoreapp2.0\linq.pdb
