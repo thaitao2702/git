@@ -1,0 +1,10 @@
+C:\Users\Thai\Desktop\Git\convert\bin\Debug\netcoreapp2.0\convert.deps.json
+C:\Users\Thai\Desktop\Git\convert\bin\Debug\netcoreapp2.0\convert.runtimeconfig.json
+C:\Users\Thai\Desktop\Git\convert\bin\Debug\netcoreapp2.0\convert.runtimeconfig.dev.json
+C:\Users\Thai\Desktop\Git\convert\bin\Debug\netcoreapp2.0\convert.dll
+C:\Users\Thai\Desktop\Git\convert\bin\Debug\netcoreapp2.0\convert.pdb
+C:\Users\Thai\Desktop\Git\convert\obj\Debug\netcoreapp2.0\convert.csproj.CoreCompileInputs.cache
+C:\Users\Thai\Desktop\Git\convert\obj\Debug\netcoreapp2.0\convert.AssemblyInfoInputs.cache
+C:\Users\Thai\Desktop\Git\convert\obj\Debug\netcoreapp2.0\convert.AssemblyInfo.cs
+C:\Users\Thai\Desktop\Git\convert\obj\Debug\netcoreapp2.0\convert.dll
+C:\Users\Thai\Desktop\Git\convert\obj\Debug\netcoreapp2.0\convert.pdb

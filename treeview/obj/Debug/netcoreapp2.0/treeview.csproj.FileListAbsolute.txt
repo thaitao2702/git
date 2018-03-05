@@ -1,0 +1,10 @@
+C:\Users\Thai\Desktop\Git\treeview\obj\Debug\netcoreapp2.0\treeview.csproj.CoreCompileInputs.cache
+C:\Users\Thai\Desktop\Git\treeview\obj\Debug\netcoreapp2.0\treeview.AssemblyInfoInputs.cache
+C:\Users\Thai\Desktop\Git\treeview\obj\Debug\netcoreapp2.0\treeview.AssemblyInfo.cs
+C:\Users\Thai\Desktop\Git\treeview\bin\Debug\netcoreapp2.0\treeview.deps.json
+C:\Users\Thai\Desktop\Git\treeview\bin\Debug\netcoreapp2.0\treeview.runtimeconfig.json
+C:\Users\Thai\Desktop\Git\treeview\bin\Debug\netcoreapp2.0\treeview.runtimeconfig.dev.json
+C:\Users\Thai\Desktop\Git\treeview\bin\Debug\netcoreapp2.0\treeview.dll
+C:\Users\Thai\Desktop\Git\treeview\bin\Debug\netcoreapp2.0\treeview.pdb
+C:\Users\Thai\Desktop\Git\treeview\obj\Debug\netcoreapp2.0\treeview.dll
+C:\Users\Thai\Desktop\Git\treeview\obj\Debug\netcoreapp2.0\treeview.pdb
