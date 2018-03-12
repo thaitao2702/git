@@ -670,11 +670,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Thai\\Desktop\\Git\\convert\\convert.csproj",
+      "projectUniqueName": "C:\\Users\\Thai\\Desktop\\Git\\CONVERT\\convert.csproj",
       "projectName": "convert",
-      "projectPath": "C:\\Users\\Thai\\Desktop\\Git\\convert\\convert.csproj",
+      "projectPath": "C:\\Users\\Thai\\Desktop\\Git\\CONVERT\\convert.csproj",
       "packagesPath": "C:\\Users\\Thai\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Thai\\Desktop\\Git\\convert\\obj\\",
+      "outputPath": "C:\\Users\\Thai\\Desktop\\Git\\CONVERT\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

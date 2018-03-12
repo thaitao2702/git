@@ -1,0 +1,927 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>HOME PAGE</title>
+		<meta charset="UTF-8" />
+        <meta name="description" content="Vertical Sliding Accordion with jQuery" />
+        <meta name="keywords" content="jquery, accordion, sliding, vertical, css3, hover, animation, slide, navigation" />
+		<meta name="author" content="Thai Tao" />	
+        
+		<!-- Style of the component -->
+        <link rel="stylesheet" type="text/css" href="css/productpage.css" />
+        <link href="https://fonts.googleapis.com/css?family=Archivo:500" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Arimo:700|Montserrat|Muli:700|Nunito+Sans:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i|Nunito:700|Saira" rel="stylesheet">
+		
+		
+    </head>
+    <body>       
+        
+        <header>
+            <div class='navbar_holder'></div>
+            <div class='navbar_wrapper'>
+               
+                <div class='navbar'>
+                    
+                    <div class='navbar_sub2'>
+                        <div class='tekstorm_logo'>
+                                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                width="400px" height="75px" viewBox="0 0 400 100" enable-background="new 0 0 400 100" xml:space="preserve">
+                           <polygon fill="#F0CF1E" points="190.336,5.439 131.771,54 172.912,54 165.992,45.069 "/>
+                           <polygon points="155.55,91.799 214.115,43 172.975,43 179.894,52.05 "/>
+                           <g>
+                               <path fill="#F0CF1E" d="M251.898,51.947h-12.222v28.781h-10.028V51.947h-12.222v-8.536h34.472V51.947z"/>
+                               <path fill="#F0CF1E" d="M289.028,71.213c0,3.141-1.058,5.566-3.172,7.277c-1.835,1.492-4.12,2.238-6.857,2.238h-15.952
+                                   c-2.737,0-5.022-0.746-6.857-2.238c-2.115-1.711-3.172-4.137-3.172-7.277V51.947c0-2.519,0.529-4.415,1.586-5.69
+                                   c1.555-1.896,4.369-2.846,8.443-2.846h15.952c4.074,0,6.889,0.949,8.444,2.846c1.057,1.275,1.585,3.172,1.585,5.69V71.213z
+                                    M278.999,68.974V54.699c0-0.809-0.232-1.469-0.699-1.981c-0.466-0.514-1.104-0.771-1.912-0.771h-10.729
+                                   c-0.809,0-1.445,0.257-1.912,0.771c-0.467,0.513-0.699,1.173-0.699,1.981v14.274c0,2.363,0.947,3.545,2.845,3.545h10.263
+                                   C278.051,72.519,278.999,71.337,278.999,68.974z"/>
+                               <path fill="#F0CF1E" d="M328.911,58.012c0,1.865-0.357,3.436-1.073,4.712c-1.771,2.176-5.131,3.451-10.075,3.824l9.842,14.134
+                                   l-11.567,0.047l-9.843-14.181h-3.032v14.181h-10.028V43.411h26.215c6.374,0,9.563,2.846,9.563,8.536V58.012z M318.883,55.493
+                                   v-0.094c0-2.301-1.026-3.452-3.079-3.452h-12.642v6.998h12.642C317.856,58.945,318.883,57.795,318.883,55.493z"/>
+                               <path fill="#F0CF1E" d="M394.449,80.729H384.42V55.54c0-1.369-0.35-2.31-1.049-2.822c-0.7-0.514-1.813-0.771-3.336-0.771H368.7
+                                   v28.781h-10.029V55.54c0-1.369-0.35-2.31-1.049-2.822c-0.7-0.514-1.813-0.771-3.336-0.771h-11.335v28.781h-10.029V43.411h51.498
+                                   c2.611,0,4.773,0.591,6.483,1.772c2.364,1.617,3.546,4.199,3.546,7.743V80.729z"/>
+                           </g>
+                           <g>
+                               <path d="M39.709,53.243H27.488v28.781H17.458V53.243H5.237v-8.536h34.472V53.243z"/>
+                               <path d="M75.86,82.024H40.082V44.707H75.86v8.536H50.111v5.737h19.218v8.863H50.111v5.644H75.86V82.024z"/>
+                               <path d="M111.171,82.024H98.902L88.36,67.377v14.647H78.332V44.707H88.36v14.646l10.542-14.646h12.269L98.11,63.366L111.171,82.024
+                                   z"/>
+                           </g>
+                        </svg>
+                    </div>
+                        <ul>
+                            <li class ='navbar_sub2_btn'>
+                                <svg id='menumorph' xmlns="http://www.w3.org/2000/svg"
+                                width="40px" height="40px"
+                                viewBox="0 0 100 100">
+                                <g id="start">
+                                    <path display='none' id="start"
+                                    
+                                    d="M 57.45,53.37
+                                    C 57.45,53.37 50.09,43.75 50.09,43.75
+                                        50.09,43.75 93.87,43.75 93.87,43.75
+                                        93.87,43.75 31.55,95.65 31.55,95.65
+                                        31.55,95.65 57.45,53.37 57.45,53.37 Z
+                                    M 42.66,46.54
+                                    C 42.66,46.54 50.02,56.25 50.02,56.25
+                                        50.02,56.25 6.25,56.25 6.25,56.25
+                                        6.25,56.25 68.56,4.16 68.56,4.16
+                                        68.56,4.16 42.66,46.54 42.66,46.54 Z" />
+                                </g>
+                                <g id="end">    
+                                    <path  
+                                    
+                                    d="M 9.25,75.25
+                                        C 9.25,75.25 9.25,92.25 9.25,92.25
+                                            9.25,92.25 90.25,92.25 90.25,92.25
+                                            90.25,92.25 90.25,75.25 90.25,75.25
+                                            90.25,75.25 9.25,75.25 9.25,75.25 Z
+                                        M 9.25,41.50
+                                        C 9.25,41.50 9.25,58.50 9.25,58.50
+                                            9.25,58.50 90.25,58.50 90.25,58.50
+                                            90.25,58.50 90.25,41.50 90.25,41.50
+                                            90.25,41.50 9.25,41.50 9.25,41.50 Z
+                                        M 9.25,7.50
+                                        C 9.25,7.50 9.25,24.50 9.25,24.50
+                                            9.25,24.50 90.25,24.50 90.25,24.50
+                                            90.25,24.50 90.25,7.50 90.25,7.50
+                                            90.25,7.50 9.25,7.50 9.25,7.50 Z" />
+                                </g>             
+                                 </svg>
+                                <a href='#'>SẢN PHẨM</a>
+                                <ul class='menu-sp'>
+                                    <a href='#'>
+                                        <li id='cpu-li'>
+                                            <div class='span-icon-container'>
+                                                <span class='icon-cpu'>
+                                                </span>
+                                            </div>
+                                            <div class='menusp-btn-wrapper'>
+                                                <h2>BỘ VI XỬ LÝ</h2>
+                                                 <h3>CPU</h3>
+                                                </div>                                              
+                                            <ul class='company-list cpu' hw-type ='cpu'>
+                                                
+                                                    <a href='http://google.com.vn'>
+                                                        <li>
+                                                            <img src='images/logo/intel.gif'>INTEL
+                                                        </li>
+                                                    </a>
+                                                
+                                              
+                                                    <a href='http://google.com.vn'>
+                                                        <li>
+                                                            <img src='images/logo/AmD.gif'>AMD
+                                                        </li>
+                                                     </a>
+                                                
+                                                <div class='menu-product-show'>
+                                                    <img src ='images/logo/cpu-intel.gif'/>
+                                                   
+
+                                                </div>
+                                            
+                                            </ul>            
+                                        </li>
+                                    </a>
+                                    <a href='#'>
+                                        <li id='mainboard-li'>
+                                            <div class='span-icon-container'>
+                                                <span class='icon-mainboard'>
+                                                </span>
+                                            </div>
+                                            <div class='menusp-btn-wrapper'>
+                                                <h2>BO MẠCH CHỦ</h2>
+                                                 <h3>MAINBOARD</h3>
+                                            </div>
+                                            <ul class='company-list mainboard' hw-type='mainboard'>
+                                                    
+                                                <a href='http://google.com.vn'>
+                                                    <li>
+                                                        <img src='images/logo/asus.gif'>ASUS
+                                                    </li>
+                                                </a>
+                                                    
+                                                   
+                                                <a href='http://google.com.vn'>
+                                                    <li>
+                                                        <img src='images/logo/msi.gif'>MSI
+                                                    </li>
+                                                </a>
+                                                    
+                                                   
+                                                <a href='http://google.com.vn'>
+                                                    <li>
+                                                        <img src='images/logo/gigabyte.gif'>GIGABYTE
+                                                    </li>
+                                                </a>
+                                                    
+                                                    <div class='menu-product-show'>
+                                                        <img src ='images/logo/cpu-intel.gif'/>
+                                                       
+    
+                                                    </div>
+                                                
+                                            </ul>  
+                                        </li>
+                                    </a>
+                                    <a href='#'>
+                                        <li id='gpu-li'>
+                                            <div class='span-icon-container'>
+                                                <span class='icon-gpu'>
+                                                </span>
+                                            </div>
+                                            <div class='menusp-btn-wrapper'>
+                                                <h2>CARD ĐỒ HỌA</h2>
+                                                 <h3>GPU</h3>
+                                            </div>
+                                            <ul class='company-list gpu' hw-type='gpu'>
+                                                    <li>
+                                                        <a href='http://google.com.vn'>
+                                                            <img src='images/logo/asus.gif'>ASUS
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                            <a href='http://google.com.vn'>
+                                                                <img src='images/logo/msi.gif'>MSI
+                                                            </a>
+                                                    </li>
+                                                    <li>
+                                                            <a href='http://google.com.vn'>
+                                                                <img src='images/logo/gigabyte.gif'>GIGABYTE
+                                                            </a>
+                                                    </li>
+                                                    <li>
+                                                            <a href='http://google.com.vn'>
+                                                                <img src='images/logo/xfx.gif'>XFX
+                                                            </a>
+                                                    </li>
+                                                    <li>
+                                                            <a href='http://google.com.vn'>
+                                                                <img src='images/logo/zotac.gif'>ZOTAC
+                                                            </a>
+                                                    </li>
+                                                    <li>
+                                                            <a href='http://google.com.vn'>
+                                                                <img src='images/logo/sapphire.gif'>SAPPHIRE
+                                                            </a>
+                                                    </li>
+                                                    <li>
+                                                            <a href='http://google.com.vn'>
+                                                                <img src='images/logo/galax.gif'>GALAX
+                                                            </a>
+                                                    </li>
+                                                    <div class='menu-product-show'>
+                                                        <img src ='images/logo/cpu-intel.gif'/>
+                                                       
+    
+                                                    </div>
+                                                   
+                                                
+                                            </ul>  
+                                        </li></a>
+                                    <a href='#'>
+                                        <li id='ram-li'>
+                                            <div class='span-icon-container'>
+                                                <span class='icon-ram'>
+                                            </span>
+                                        </div>
+                                           <div class='menusp-btn-wrapper'>
+                                               <h2>BỘ NHỚ TRONG</h2>
+                                            <h3>RAM</h3>
+                                        </div>
+                                        <ul class='company-list ram' hw-type='ram'>
+                                                <li>
+                                                    <a href='http://google.com.vn'>
+                                                        <img src='images/logo/corsair.gif'>Corsair
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                        <a href='http://google.com.vn'>
+                                                            <img src='images/logo/gskill.gif'>Gskill
+                                                        </a>
+                                                </li>                                                
+                                                <li>
+                                                    <a href='http://google.com.vn'>
+                                                        <img src='images/logo/kingston.gif'>Kingston
+                                                    </a>
+                                                </li>
+                                                <div class='menu-product-show'>
+                                                    <img src ='images/logo/cpu-intel.gif'/>                                                  
+                                                </div>
+                                            
+                                            </ul>  
+                                        </li>
+                                    </a>
+                                    <a href='#'>
+                                        <li id='hdd-li'>
+                                            <div class='span-icon-container'>
+                                                <span class='icon-hdd'>
+                                                </span>
+                                            </div>
+                                            <div class='menusp-btn-wrapper'>
+                                                <h2>Ổ CỨNG</h2>
+                                                 <h3>HDD</h3>
+                                            </div>
+                                            <ul class='company-list hdd' hw-type='hdd'>
+                                                <li>
+                                                    <a href='http://google.com.vn'>
+                                                        <img src='images/logo/wd.gif'>Western Digital
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                        <a href='http://google.com.vn'>
+                                                            <img src='images/logo/Seagate.gif'>Seagate
+                                                        </a>
+                                                </li>
+                                                <div class='menu-product-show'>
+                                                    <img src ='images/logo/cpu-intel.gif'/>
+                                                   
+
+                                                </div>
+                                            
+                                            </ul>  
+                                        </li>
+                                    </a>
+                                    <a href='#'>
+                                        <li id='ssd-li'>
+                                            <div class='span-icon-container'>
+                                                <span class='icon-ssd'>
+                                                </span>
+                                            </div>
+                                            <div class='menusp-btn-wrapper'>
+                                                <h2>Ổ CỨNG THỂ RẮN</h2>
+                                                 <h3>SSD</h3>
+                                            </div>
+                                            <ul class='company-list ssd' hw-type='ssd'>
+                                                <li>
+                                                    <a href='http://google.com.vn'>
+                                                        <img src='images/logo/samsung.gif'>Samsung
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                        <a href='http://google.com.vn'>
+                                                            <img src='images/logo/plextor.gif'>Plextor
+                                                        </a>
+                                                </li>
+                                                <li>
+                                                    <a href='http://google.com.vn'>
+                                                        <img src='images/logo/wd.gif'>Western Digital
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href='http://google.com.vn'>
+                                                        <img src='images/logo/kingston.gif'>Kingston
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href='http://google.com.vn'>
+                                                        <img src='images/logo/liteon.gif'>Liteon
+                                                    </a>
+                                                </li>
+                                                <div class='menu-product-show'>
+                                                    <img src ='images/logo/cpu-intel.gif'/>
+                                                   
+
+                                                </div>
+                                            
+                                            </ul>  
+                                        </li>
+                                    </a>
+                                    <a href='#'>
+                                        <li id='monitor-li'>
+                                            <div class='span-icon-container'>
+                                                <span class='icon-monitor'>
+                                                </span>
+                                            </div>
+                                            <div class='menusp-btn-wrapper'>
+                                                <h2>MÀN HÌNH</h2>
+                                                 <h3>MONITOR</h3>
+                                            </div>
+                                            <ul class='company-list monitor' hw-type='monitor'>
+                                                <li>
+                                                    <a href='http://google.com.vn'>
+                                                        <img src='images/logo/lg.gif'>LG
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                        <a href='http://google.com.vn'>
+                                                            <img src='images/logo/dell.gif'>Dell
+                                                        </a>
+                                                </li>
+                                                <li>
+                                                        <a href='http://google.com.vn'>
+                                                            <img src='images/logo/Samsung.gif'>Samsung
+                                                        </a>
+                                                </li>
+                                                <li>
+                                                        <a href='http://google.com.vn'>
+                                                            <img src='images/logo/aoc.gif'>AOC
+                                                        </a>
+                                                </li>
+                                                <li>
+                                                        <a href='http://google.com.vn'>
+                                                            <img src='images/logo/asus.gif'>Asus
+                                                        </a>
+                                                </li>
+                                               
+                                                <div class='menu-product-show'>
+                                                    <img src ='images/logo/cpu-intel.gif'/>
+                                                   
+
+                                                </div>
+                                            
+                                            </ul>  
+                                        </li></a>
+                                    <a href='#'>
+                                        <li id='psu-li'>
+                                            <div class='span-icon-container'>
+                                                <span class='icon-psu'>
+                                                </span>
+                                            </div>
+                                            <div class='menusp-btn-wrapper'>
+                                                <h2>NGUỒN</h2>
+                                                 <h3>PSU</h3>
+                                            </div>
+                                            <ul class='company-list psu' hw-type='psu'>
+                                                <li>
+                                                    <a href='http://google.com.vn'>
+                                                        <img src='images/logo/intel.gif'>INTEL
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                        <a href='http://google.com.vn'>
+                                                            <img src='images/logo/AmD.gif'>AMD
+                                                        </a>
+                                                </li>
+                                                <div class='menu-product-show'>
+                                                    <img src ='images/logo/cpu-intel.gif'/>
+                                                   
+
+                                                </div>
+                                            
+                                            </ul>  
+                                        </li>
+                                    </a>
+                                    <a href='#'>
+                                        <li id='case-li'>
+                                            <div class='span-icon-container'>
+                                                <span class='icon-case'>
+                                                </span>
+                                            </div>
+                                            <div class='menusp-btn-wrapper'>
+                                                <h2>VỎ MÁY</h2>
+                                                 <h3>CASE</h3>
+                                            </div>
+                                            <ul class='company-list case' hw-type='case'>
+                                                <li>
+                                                    <a href='http://google.com.vn'>
+                                                        <img src='images/logo/corsair.gif'>Corsair
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                        <a href='http://google.com.vn'>
+                                                            <img src='images/logo/Coolermaster.gif'>Cooler Master
+                                                        </a>
+                                                </li>
+                                                <li>
+                                                    <a href='http://google.com.vn'>
+                                                        <img src='images/logo/sama.gif'>Sama
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href='http://google.com.vn'>
+                                                        <img src='images/logo/phantek.gif'>Phantek
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href='http://google.com.vn'>
+                                                        <img src='images/logo/aigo.gif'>Aigo
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href='http://google.com.vn'>
+                                                        <img src='images/logo/nzxt.gif'>Nzxt
+                                                    </a>
+                                                </li>
+                                                <div class='menu-product-show'>
+                                                    <img src ='images/logo/cpu-intel.gif'/>
+                                                   
+
+                                                </div>
+                                            
+                                            </ul>  
+                                      </li>
+                                    </a>
+                                </ul>
+                            </li>
+                            
+                            </div>
+                            <div class='search_bar'>
+                                <form>
+                                      <input class="search_input" placeholder="Nhập thông tin tìm kiếm ..." type="search" value="" name="search" id="search">
+                                      <input class="search_submit" type="submit" value="">
+                                      <span class='icon-search'></span>
+                                </form>
+                            </div>
+                            <a class='cart' href ='#'>                               
+                                    <span class='icon-cart'></span>                                
+                                <ul class='count'>
+                                    <li>0</li>
+                                    <li>0</li>
+                                </ul>
+                            </a> 
+                            <div class='cart-content'>
+                                <div class='wrapper'>
+                                    <div class='header'>
+                                        <h2>GIỎ HÀNG</h2>
+
+                                    </div>
+                                    <div class='body'>
+                                        <ul>
+                                            
+                                            
+                                        </ul>
+
+                                    </div>
+                                    <div class='footer'>
+                                        TỔNG :<span> 0 đ  </span> 
+                                    </div>
+                                </div>
+
+                            </div>   
+                        </ul>
+                    </div>
+                </div>
+                
+            </div> 
+        <content>
+            <div class = 'main'>
+                <div class='main-picture'>
+                    <img src='images/product/msi_x370_ack/background.png'>
+                    <img class='mirror' src='images/product/msi_x370_ack/background.png'>
+                    <div class='gradient'></div>
+                    
+
+                </div>
+                <div class='main-info'>
+                    <h1>MSI X370 GAMING M7 ACK</h1>
+                    <p class='title-info'>Bo mạch chủ AMD X370</p>
+                    <hr>
+                    <p class='short-description'>
+                             Thiết kế siêu khủng mạnh mẽ + ốp I/O<br>
+                             Đèn led RGB tùy biến 16 triệu mầu ảo diệu.<br>
+                             Khe VGA bọc thép cứng cáp cho 2x card to nặng.<br>
+                             Khe RAM và M2 bọc thép chống nhiễu.<br>
+                             Có tản nhiệt cho M2 SSD<br>
+                             Chipset: X370 support AM4 Ryzen R3/R5/R7 SK-1331 <br>
+                             Bộ nhớ: Dual channel 4 x DDR4 - 64GB 2400 MHz / OC 3200MHz<br>
+                             Cổng USB: TypeC + TypeA USB3.1, 4+4 USB3.0, 2+4 USB2.0     
+                    </p>
+                    <hr>
+                    <h4 class='stock'>Còn hàng</h4>
+                    <h2>4.690.000 đ</h2>
+                    <a href='#' class='buy-button'>
+                        THÊM VÀO GIỎ HÀNG
+                    </a>
+                </div>     
+                <div class='clear'></div>           
+            </div>
+            <div class='detail-info'>
+                <div class='navbar-holder'></div>
+                <div class='detail-navbar'>
+                    <ul>
+                        <li><a href='#section1'>HÌNH ẢNH</a></li>
+                        <li><a href='#section2'>TÍNH NĂNG</a></li>
+                        <li><a href='#section3'>THÔNG SỐ</a></li>
+                        <li><a href='#section4'>SẢN PHẨM LIÊN QUAN</a></li>
+                        <div class='clear'></div>
+                    </ul>
+                </div>
+                <div class = 'info info-galery light-section' id='section1' color ='white'>
+                    <h2>HÌNH ẢNH</h2>
+                    <div class='thumbnail'>
+                        <div class='thumb-move'></div>
+                        <img class='thumb' src='images/product/msi_x370_ack/1.png'>
+                        <img class='thumb' src='images/product/msi_x370_ack/2.png'>
+                        <img class='thumb' src='images/product/msi_x370_ack/3.png'>
+                        
+                    </div>
+                    <div class='galery-image'>
+                        <img class='front big-image' src='images/product/msi_x370_ack/1.png'>
+                        <img class='back big-image' src='images/product/msi_x370_ack/1.png'>
+                    </div>    
+                    
+
+                </div>
+                <div class = 'info info-feature light-section' id='section2' color ='black'>
+                    <h2>TÍNH NĂNG</h2>
+                    <div class='sub-feature'>
+                        <h1>CHÌM ĐẮM VÀO THẾ GIỚI GAME</h1>
+                        <img src='https://asset.msi.com/global/picture/image/feature/mb/X370/X370-gaming-m7/x370-gaming-m7-ack-audio-1920.jpg'>
+                    </div>
+                    <div class='sub-feature'>
+                        <h1>VÔ ĐỊCH VỀ HIỆU NĂNG BỘ NHỚ</h1>
+                        <img src='https://asset.msi.com/global/picture/image/feature/mb/X370/X370-gaming-m7/x370-gaming-m7-ack-ddr-1920.jpg'>
+                    </div>
+                    
+                </div>
+                <div class = 'info info-spec light-section' id='section3' color ='white'>
+                    <h2>THÔNG SỐ</h2>
+                    <div class='table-wrapper'>
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                            SOCKET    
+                                    </td>
+                                    <td>
+                                            AM4
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                            RYZEN 7     
+                                    </td>
+                                    <td>
+                                            AM4
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                            CHIPSET    
+                                    </td>
+                                    <td>
+                                            AMD® X370 Chipset
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                            DDR4 MEMORY    
+                                    </td>
+                                    <td>
+                                            1866/ 2133/ 2400/ 2667(OC)/ 2933(OC)/ 3200(OC)+ Mhz
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                            MEMORY CHANNEL    
+                                    </td>
+                                    <td>
+                                            Dual
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                            DIMM SLOTS    
+                                    </td>
+                                    <td>
+                                            4
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                            MAX MEMORY (GB)    
+                                    </td>
+                                    <td>
+                                            64
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                            PCI-EX16    
+                                    </td>
+                                    <td>
+                                            3
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                            PCI-E GEN    
+                                    </td>
+                                    <td>
+                                            Gen3(16,0) (8,8), Gen2(4)
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                            PCI-EX1    
+                                    </td>
+                                    <td>
+                                            3
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                            SATAIII    
+                                    </td>
+                                    <td>
+                                            6
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                            M.2 SLOT    
+                                    </td>
+                                    <td>
+                                            2
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                            U.2    
+                                    </td>
+                                    <td>
+                                            1
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                            RAID    
+                                    </td>
+                                    <td>
+                                            0/1/10
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                            RAID    
+                                    </td>
+                                    <td>
+                                            0/1/10
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                            TMP   
+                                    </td>
+                                    <td>
+                                            1
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                            LAN   
+                                    </td>
+                                    <td>
+                                            1x Killer E2500 Gigabit LAN controller
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                            USB 3.1 PORTS (FRONT)   
+                                    </td>
+                                    <td>
+                                            1(Gen2, Type C), 4(Gen1, Type A)
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                            USB 3.1 PORTS (REAR) 
+                                    </td>
+                                    <td>
+                                            1(Gen2, Type C), 1(Gen2, Type A), 6(Gen1, Type A)
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                            USB 2.0 PORTS (FRONT)   
+                                    </td>
+                                    <td>
+                                            4
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                            USB 2.0 PORTS (REAR) 
+                                    </td>
+                                    <td>
+                                            3
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                            AUDIO PORTS (REAR)    
+                                    </td>
+                                    <td>
+                                            Realtek® ALC1220 Codec
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                            DIRECTX    
+                                    </td>
+                                    <td>
+                                            12
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                            FORM FACTOR 
+                                    </td>
+                                    <td>
+                                            ATX
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                            SLI 
+                                    </td>
+                                    <td>
+                                            Y
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                            CROSSFIRE    
+                                    </td>
+                                    <td>
+                                            Y
+                                    </td>
+                                </tr>
+                            </tbody>
+
+                        </table>
+                    </div>
+                    
+                </div>
+                <div class = 'info info-other light-section' id='section4' color ='black'>
+                    <h2>SẢN PHẨM LIÊN QUAN</h2>
+
+                    <div class='product-list light-section' color='light'>
+                        <div class = 'product-line'>
+                            <div class='product'>
+                                <div class='product-content'>
+                                    <img src='images/product/1.png'>
+                                    <h3 class ='product-name'><a href='asus_maximus.html'>
+                                        Asus Maximus</a>
+                                    </h3>
+                                    <h2 class ='price'>1.999.000 đ</h2>
+                                    <img src='images/new.png' class='newproduct-logo'>
+                                    <div class='buy-btn'>
+                                        <span class='icon-cart'></span>
+                                    </div>
+                                </div>    
+                                <div class='product-info'>
+                                    
+                                    Chipset: <span>   H170</span><br>
+                                    Socket hỗ trợ: <span>   LGA1151</span><br>
+                                    Bộ nhớ ram: <span>   DDR4</span> <br>
+                                    Chuẩn kích cỡ: <span>   mATX</span>
+                                </div>                          
+                             
+                            </div>
+                            <div class='product'>
+                                <div class='product-content'>
+                                    <img src='images/product/2.png'>
+                                    <h3 class ='product-name'>
+                                        <a href='asus_maximus.html'>
+                                            MSI GTX1050</a>
+                                    </h3>
+                                    <h2 class ='price'>2.299.000 đ</h2>
+                                    <div class='buy-btn'>
+                                            <span class='icon-cart'></span>
+                                        </div>
+                                </div>
+                                <div class='product-info'>
+                                    
+                                    Chipset: <span>GeForce® GTX 1060</span><br>
+                                    CUDA Cores: <span>1152</span><br>
+                                    RAM: <span>3GB DDR4</span> <br>
+                                    Base Clock (MHz): <span>1556</span> <br>
+                                    Memory Speed: <span>4004 (8008) Mhz</span> <br>
+                                    Chuẩn kích cỡ: <span>mATX</span>
+                                </div>          
+                            </div>
+                            <div class='product'>
+                                    <div class='product-content'>
+                                        <img src='images/product/3.png'>   
+                                        <h3 class ='product-name'>
+                                            <a href='asus_maximus.html'>Ryzen 5 1500</a></h3>
+                                        <h2 class ='price'>4.699.000 đ</h2>
+                                        <img src='images/new.png' class='newproduct-logo'>
+                                        <div class='buy-btn'>
+                                            <span class='icon-cart'></span>
+                                        </div>
+                                    </div> 
+                                    <div class='product-info'>
+                                            
+                                            Chipset: <span>H170</span><br>
+                                            Socket hỗ trợ: <span>LGA1151</span><br>
+                                            Bộ nhớ ram: <span>DDR4</span> <br>
+                                            Chuẩn kích cỡ: <span>mATX</span>
+                                        </div>   
+                            </div>
+                            <div class='product'>
+                                    <div class='product-content'>
+                                        <img src='images/product/4.png'> 
+                                        <h3 class ='product-name'>
+                                            <a href='asus_maximus.html'>MSI Z370 GODLIKE GAMING
+                                            </a> </h3>
+                                        <h2 class ='price'>14.690.000 đ</h2>
+                                        <div class='buy-btn'>
+                                            <span class='icon-cart'></span>
+                                        </div>
+                                    </div>
+                                    <div class='product-info'>
+                                            
+                                            Chipset: <span>GeForce® GTX 1060</span><br>
+                                            CUDA Cores: <span>1152</span><br>
+                                            RAM: <span>3GB DDR4</span> <br>
+                                            Base Clock (MHz): <span>1556</span> <br>
+                                            Memory Speed: <span>4004 (8008) Mhz</span> <br>
+                                            Chuẩn kích cỡ: <span>mATX</span>
+                                    </div>       
+                            </div>
+                            <div class='clear'></div>
+                        </div>
+                </div>
+                
+            </div>    
+        </content>   
+
+        <footer>
+               
+            <div class='footer-wrapper'>
+                <div class='footer-block'>
+                    <a href='#'><h3>Về TekStorm</h3></a>
+                    <a href='#'><h3>Liên hệ</h3></a>
+
+                </div>
+                <div class='footer-block'>
+                    <a href='#'><h3>Chính sách bảo hành</h3></a>
+                    <a href='#'><h3>Chính sách vận chuyển</h3></a>
+                    
+                </div>
+                <div class='footer-block'>
+                    	TekStorm</br>
+                        57 Nguyễn Văn Huyên - Cầu Giấy - Hà Nội</br>
+                        Tel: (024)38610088/ (024) 38610099 </br>
+                        Email: kinhdoanhle@tekstorm.com
+                            
+                </div>    
+                <div class='footer-block'>
+                    Logo here
+                    <img src='images/facebook.png'/>
+                    <img src='images/youtube.ico'/>
+                        
+                </div>
+            </div>
+        </footer>    
+            
+        
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        
+        <script type="text/javascript" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/DrawSVGPlugin.js?r=6"></script>
+        <script src="js/svg-morpheus.js"></script>
+        <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js'></script>
+        <script src ='https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/plugins/ScrollToPlugin.min.js'></script> 
+        <script src="js/productpage.js"></script>
+		
+		<script>
+			
+		</script>
+    </body>
+</html>

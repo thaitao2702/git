@@ -1,0 +1,664 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>HOME PAGE</title>
+		<meta charset="UTF-8" />
+        <meta name="description" content="Vertical Sliding Accordion with jQuery" />
+        <meta name="keywords" content="jquery, accordion, sliding, vertical, css3, hover, animation, slide, navigation" />
+		<meta name="author" content="Thai Tao" />	
+        
+		<!-- Style of the component -->
+        <link rel="stylesheet" type="text/css" href="css/msi.css" />
+        <link href="https://fonts.googleapis.com/css?family=Archivo:500" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Arimo:700|Montserrat|Muli:700|Nunito+Sans:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i|Nunito:700|Saira" rel="stylesheet">
+		
+		
+    </head>
+    <body>              
+        <header>
+            <div class='navbar_holder'></div>
+            <div class='navbar_wrapper'>
+               
+                <div class='navbar'>
+                    
+                    <div class='navbar_sub2'>
+                        <a href='index.html'>
+                            <div class='tekstorm_logo'>
+                                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                width="400px" height="75px" viewBox="0 0 400 100" enable-background="new 0 0 400 100" xml:space="preserve">
+                                    <polygon fill="#F0CF1E" points="190.336,5.439 131.771,54 172.912,54 165.992,45.069 "/>
+                                    <polygon points="155.55,91.799 214.115,43 172.975,43 179.894,52.05 "/>
+                                <g>
+                               <path fill="#F0CF1E" d="M251.898,51.947h-12.222v28.781h-10.028V51.947h-12.222v-8.536h34.472V51.947z"/>
+                               <path fill="#F0CF1E" d="M289.028,71.213c0,3.141-1.058,5.566-3.172,7.277c-1.835,1.492-4.12,2.238-6.857,2.238h-15.952
+                                   c-2.737,0-5.022-0.746-6.857-2.238c-2.115-1.711-3.172-4.137-3.172-7.277V51.947c0-2.519,0.529-4.415,1.586-5.69
+                                   c1.555-1.896,4.369-2.846,8.443-2.846h15.952c4.074,0,6.889,0.949,8.444,2.846c1.057,1.275,1.585,3.172,1.585,5.69V71.213z
+                                    M278.999,68.974V54.699c0-0.809-0.232-1.469-0.699-1.981c-0.466-0.514-1.104-0.771-1.912-0.771h-10.729
+                                   c-0.809,0-1.445,0.257-1.912,0.771c-0.467,0.513-0.699,1.173-0.699,1.981v14.274c0,2.363,0.947,3.545,2.845,3.545h10.263
+                                   C278.051,72.519,278.999,71.337,278.999,68.974z"/>
+                               <path fill="#F0CF1E" d="M328.911,58.012c0,1.865-0.357,3.436-1.073,4.712c-1.771,2.176-5.131,3.451-10.075,3.824l9.842,14.134
+                                   l-11.567,0.047l-9.843-14.181h-3.032v14.181h-10.028V43.411h26.215c6.374,0,9.563,2.846,9.563,8.536V58.012z M318.883,55.493
+                                   v-0.094c0-2.301-1.026-3.452-3.079-3.452h-12.642v6.998h12.642C317.856,58.945,318.883,57.795,318.883,55.493z"/>
+                               <path fill="#F0CF1E" d="M394.449,80.729H384.42V55.54c0-1.369-0.35-2.31-1.049-2.822c-0.7-0.514-1.813-0.771-3.336-0.771H368.7
+                                   v28.781h-10.029V55.54c0-1.369-0.35-2.31-1.049-2.822c-0.7-0.514-1.813-0.771-3.336-0.771h-11.335v28.781h-10.029V43.411h51.498
+                                   c2.611,0,4.773,0.591,6.483,1.772c2.364,1.617,3.546,4.199,3.546,7.743V80.729z"/>
+                                </g>
+                                <g>
+                               <path d="M39.709,53.243H27.488v28.781H17.458V53.243H5.237v-8.536h34.472V53.243z"/>
+                               <path d="M75.86,82.024H40.082V44.707H75.86v8.536H50.111v5.737h19.218v8.863H50.111v5.644H75.86V82.024z"/>
+                               <path d="M111.171,82.024H98.902L88.36,67.377v14.647H78.332V44.707H88.36v14.646l10.542-14.646h12.269L98.11,63.366L111.171,82.024
+                                   z"/>
+                            </g>
+                            </svg>
+                            </div>
+                        </a>
+                        <ul>
+                            <li class ='navbar_sub2_btn'>
+                                <svg id='menumorph' xmlns="http://www.w3.org/2000/svg"
+                                width="40px" height="40px"
+                                viewBox="0 0 100 100">
+                                <g id="start">
+                                    <path display='none' id="start"
+                                    
+                                    d="M 57.45,53.37
+                                    C 57.45,53.37 50.09,43.75 50.09,43.75
+                                        50.09,43.75 93.87,43.75 93.87,43.75
+                                        93.87,43.75 31.55,95.65 31.55,95.65
+                                        31.55,95.65 57.45,53.37 57.45,53.37 Z
+                                    M 42.66,46.54
+                                    C 42.66,46.54 50.02,56.25 50.02,56.25
+                                        50.02,56.25 6.25,56.25 6.25,56.25
+                                        6.25,56.25 68.56,4.16 68.56,4.16
+                                        68.56,4.16 42.66,46.54 42.66,46.54 Z" />
+                                </g>
+                                <g id="end">    
+                                    <path  
+                                    
+                                    d="M 9.25,75.25
+                                        C 9.25,75.25 9.25,92.25 9.25,92.25
+                                            9.25,92.25 90.25,92.25 90.25,92.25
+                                            90.25,92.25 90.25,75.25 90.25,75.25
+                                            90.25,75.25 9.25,75.25 9.25,75.25 Z
+                                        M 9.25,41.50
+                                        C 9.25,41.50 9.25,58.50 9.25,58.50
+                                            9.25,58.50 90.25,58.50 90.25,58.50
+                                            90.25,58.50 90.25,41.50 90.25,41.50
+                                            90.25,41.50 9.25,41.50 9.25,41.50 Z
+                                        M 9.25,7.50
+                                        C 9.25,7.50 9.25,24.50 9.25,24.50
+                                            9.25,24.50 90.25,24.50 90.25,24.50
+                                            90.25,24.50 90.25,7.50 90.25,7.50
+                                            90.25,7.50 9.25,7.50 9.25,7.50 Z" />
+                                </g>             
+                                 </svg>
+                                <a href='#'>SẢN PHẨM</a>
+                                <ul class='menu-sp'>
+                                    <a href='#'>
+                                        <li id='cpu-li'>
+                                            <div class='span-icon-container'>
+                                                <span class='icon-cpu'>
+                                                </span>
+                                            </div>
+                                            <div class='menusp-btn-wrapper'>
+                                                <h2>BỘ VI XỬ LÝ</h2>
+                                                 <h3>CPU</h3>
+                                                </div>                                              
+                                            <ul class='company-list cpu' hw-type ='cpu'>
+                                                
+                                                    <a href='http://google.com.vn'>
+                                                        <li>
+                                                            <img src='images/logo/intel.gif'>INTEL
+                                                        </li>
+                                                    </a>
+                                                
+                                              
+                                                    <a href='http://google.com.vn'>
+                                                        <li>
+                                                            <img src='images/logo/AmD.gif'>AMD
+                                                        </li>
+                                                     </a>
+                                                
+                                                <div class='menu-product-show'>
+                                                    <img src ='images/logo/cpu-intel.gif'/>
+                                                   
+
+                                                </div>
+                                            
+                                            </ul>            
+                                        </li>
+                                    </a>
+                                    <a href='#'>
+                                        <li id='mainboard-li'>
+                                            <div class='span-icon-container'>
+                                                <span class='icon-mainboard'>
+                                                </span>
+                                            </div>
+                                            <div class='menusp-btn-wrapper'>
+                                                <h2>BO MẠCH CHỦ</h2>
+                                                 <h3>MAINBOARD</h3>
+                                            </div>
+                                            <ul class='company-list mainboard' hw-type='mainboard'>
+                                                    
+                                                <a href='http://google.com.vn'>
+                                                    <li>
+                                                        <img src='images/logo/asus.gif'>ASUS
+                                                    </li>
+                                                </a>
+                                                    
+                                                   
+                                                <a href='http://google.com.vn'>
+                                                    <li>
+                                                        <img src='images/logo/msi.gif'>MSI
+                                                    </li>
+                                                </a>
+                                                    
+                                                   
+                                                <a href='http://google.com.vn'>
+                                                    <li>
+                                                        <img src='images/logo/gigabyte.gif'>GIGABYTE
+                                                    </li>
+                                                </a>
+                                                    
+                                                    <div class='menu-product-show'>
+                                                        <img src ='images/logo/cpu-intel.gif'/>
+                                                       
+    
+                                                    </div>
+                                                
+                                            </ul>  
+                                        </li>
+                                    </a>
+                                    <a href='#'>
+                                        <li id='gpu-li'>
+                                            <div class='span-icon-container'>
+                                                <span class='icon-gpu'>
+                                                </span>
+                                            </div>
+                                            <div class='menusp-btn-wrapper'>
+                                                <h2>CARD ĐỒ HỌA</h2>
+                                                 <h3>GPU</h3>
+                                            </div>
+                                            <ul class='company-list gpu' hw-type='gpu'>                                                    
+                                                <a href='http://google.com.vn'>
+                                                    <li>
+                                                        <img src='images/logo/asus.gif'>ASUS
+                                                    </li>
+                                                </a>
+                                                   
+                                                <a href='http://google.com.vn'>
+                                                    <li>
+                                                        <img src='images/logo/msi.gif'>MSI
+                                                    </li>
+                                                </a>
+                                                <a href='http://google.com.vn'>
+                                                    <li>
+                                                        <img src='images/logo/gigabyte.gif'>GIGABYTE
+                                                    </li>
+                                                </a>
+                                                <a href='http://google.com.vn'>
+                                                    <li>
+                                                        <img src='images/logo/xfx.gif'>XFX
+                                                    </li>
+                                                </a>
+                                                <a href='http://google.com.vn'>
+                                                    <li>
+                                                        <img src='images/logo/zotac.gif'>ZOTAC
+                                                    </li>
+                                                </a>
+                                                <a href='http://google.com.vn'>
+                                                    <li>
+                                                        <img src='images/logo/sapphire.gif'>SAPPHIRE
+                                                    </li>
+                                                </a>
+                                                <a href='http://google.com.vn'>
+                                                    <li>
+                                                        <img src='images/logo/galax.gif'>GALAX
+                                                    </li>
+                                                </a>
+                                                    <div class='menu-product-show'>
+                                                        <img src ='images/logo/cpu-intel.gif'/>
+                                                       
+    
+                                                    </div>
+                                                   
+                                                
+                                            </ul>  
+                                        </li></a>
+                                    <a href='#'>
+                                        <li id='ram-li'>
+                                            <div class='span-icon-container'>
+                                                <span class='icon-ram'>
+                                            </span>
+                                        </div>
+                                           <div class='menusp-btn-wrapper'>
+                                               <h2>BỘ NHỚ TRONG</h2>
+                                            <h3>RAM</h3>
+                                        </div>
+                                        <ul class='company-list ram' hw-type='ram'>
+                                                
+                                            <a href='http://google.com.vn'>
+                                                <li>
+                                                    <img src='images/logo/corsair.gif'>Corsair
+                                                </li>
+                                            </a>
+                                                
+                                            <a href='http://google.com.vn'>
+                                                <li>
+                                                    <img src='images/logo/gskill.gif'>Gskill
+                                                </li>
+                                            </a>                                             
+                                            <a href='http://google.com.vn'>
+                                                <li>
+                                                    <img src='images/logo/kingston.gif'>Kingston
+                                                </li>
+                                            </a>
+                                                <div class='menu-product-show'>
+                                                    <img src ='images/logo/cpu-intel.gif'/>                                                  
+                                                </div>
+                                            
+                                            </ul>  
+                                        </li>
+                                    </a>
+                                    <a href='#'>
+                                        <li id='hdd-li'>
+                                            <div class='span-icon-container'>
+                                                <span class='icon-hdd'>
+                                                </span>
+                                            </div>
+                                            <div class='menusp-btn-wrapper'>
+                                                <h2>Ổ CỨNG</h2>
+                                                 <h3>HDD</h3>
+                                            </div>
+                                            <ul class='company-list hdd' hw-type='hdd'>
+                                                    <a href='http://google.com.vn'>
+                                                        <li>
+                                                            <img src='images/logo/wd.gif'>Western Digital
+                                                        </li>
+                                                    </a>
+                                                    <a href='http://google.com.vn'>
+                                                        <li>
+                                                            <img src='images/logo/seagate.gif'>Seagate
+                                                        </li>
+                                                    </a>
+                                                <div class='menu-product-show'>
+                                                    <img src ='images/logo/cpu-intel.gif'/>
+                                                   
+
+                                                </div>
+                                            
+                                            </ul>  
+                                        </li>
+                                    </a>
+                                    <a href='#'>
+                                        <li id='ssd-li'>
+                                            <div class='span-icon-container'>
+                                                <span class='icon-ssd'>
+                                                </span>
+                                            </div>
+                                            <div class='menusp-btn-wrapper'>
+                                                <h2>Ổ CỨNG THỂ RẮN</h2>
+                                                 <h3>SSD</h3>
+                                            </div>
+                                            <ul class='company-list ssd' hw-type='ssd'>
+                                                    <a href='http://google.com.vn'>
+                                                        <li>
+                                                            <img src='images/logo/samsung.gif'>Samsung
+                                                        </li>
+                                                    </a>
+                                                    <a href='http://google.com.vn'>
+                                                        <li>
+                                                            <img src='images/logo/plextor.gif'>Plextor
+                                                        </li>
+                                                    </a>
+                                                    <a href='http://google.com.vn'>
+                                                        <li>
+                                                            <img src='images/logo/wd.gif'>Western Digital
+                                                        </li>
+                                                    </a>
+                                                    <a href='http://google.com.vn'>
+                                                        <li>
+                                                            <img src='images/logo/kingston.gif'>Kingston
+                                                        </li>
+                                                    </a>
+                                                    <a href='http://google.com.vn'>
+                                                        <li>
+                                                            <img src='images/logo/liteon.gif'>Liteon
+                                                        </li>
+                                                    </a>
+                                                <div class='menu-product-show'>
+                                                    <img src ='images/logo/cpu-intel.gif'/>
+                                                   
+
+                                                </div>
+                                            
+                                            </ul>  
+                                        </li>
+                                    </a>
+                                    <a href='#'>
+                                        <li id='monitor-li'>
+                                            <div class='span-icon-container'>
+                                                <span class='icon-monitor'>
+                                                </span>
+                                            </div>
+                                            <div class='menusp-btn-wrapper'>
+                                                <h2>MÀN HÌNH</h2>
+                                                 <h3>MONITOR</h3>
+                                            </div>
+                                            <ul class='company-list monitor' hw-type='monitor'>
+                                                    <a href='http://google.com.vn'>
+                                                        <li>
+                                                            <img src='images/logo/lg.gif'>LG
+                                                        </li>
+                                                    </a>
+                                                    <a href='http://google.com.vn'>
+                                                        <li>
+                                                            <img src='images/logo/dell.gif'>Dell
+                                                        </li>
+                                                    </a>
+                                                    <a href='http://google.com.vn'>
+                                                        <li>
+                                                            <img src='images/logo/samsung.gif'>Samsung
+                                                        </li>
+                                                    </a>
+                                                    <a href='http://google.com.vn'>
+                                                        <li>
+                                                            <img src='images/logo/aoc.gif'>AOC
+                                                        </li>
+                                                    </a>
+                                                    <a href='http://google.com.vn'>
+                                                        <li>
+                                                            <img src='images/logo/asus.gif'>Asus
+                                                        </li>
+                                                    </a>
+                                               
+                                                <div class='menu-product-show'>
+                                                    <img src ='images/logo/cpu-intel.gif'/>
+                                                   
+
+                                                </div>
+                                            
+                                            </ul>  
+                                        </li></a>
+                                    <a href='#'>
+                                        <li id='psu-li'>
+                                            <div class='span-icon-container'>
+                                                <span class='icon-psu'>
+                                                </span>
+                                            </div>
+                                            <div class='menusp-btn-wrapper'>
+                                                <h2>NGUỒN</h2>
+                                                 <h3>PSU</h3>
+                                            </div>
+                                            <ul class='company-list psu' hw-type='psu'>
+                                                    <a href='http://google.com.vn'>
+                                                        <li>
+                                                            <img src='images/logo/corsair.gif'>Corsair
+                                                        </li>
+                                                    </a>
+                                                <a href='http://google.com.vn'>
+                                                    <li>
+                                                        <img src='images/logo/coolermaster.gif'>Cooler Master
+                                                    </li>
+                                                </a>
+                                                <div class='menu-product-show'>
+                                                    <img src ='images/logo/cpu-intel.gif'/>
+                                                   
+
+                                                </div>
+                                            
+                                            </ul>  
+                                        </li>
+                                    </a>
+                                    <a href='#'>
+                                        <li id='case-li'>
+                                            <div class='span-icon-container'>
+                                                <span class='icon-case'>
+                                                </span>
+                                            </div>
+                                            <div class='menusp-btn-wrapper'>
+                                                <h2>VỎ MÁY</h2>
+                                                 <h3>CASE</h3>
+                                            </div>
+                                            <ul class='company-list case' hw-type='case'>
+                                                    <a href='http://google.com.vn'>
+                                                        <li>
+                                                            <img src='images/logo/corsair.gif'>Corsair
+                                                        </li>
+                                                    </a>
+                                                    <a href='http://google.com.vn'>
+                                                        <li>
+                                                            <img src='images/logo/coolermaster.gif'>Cooler Master
+                                                        </li>
+                                                    </a>
+                                                    <a href='http://google.com.vn'>
+                                                        <li>
+                                                            <img src='images/logo/sama.gif'>Sama
+                                                        </li>
+                                                    </a>
+                                                    <a href='http://google.com.vn'>
+                                                        <li>
+                                                            <img src='images/logo/phantek.gif'>Phantek
+                                                        </li>
+                                                    </a>
+                                                    <a href='http://google.com.vn'>
+                                                        <li>
+                                                            <img src='images/logo/aigo.gif'>Aigo
+                                                        </li>
+                                                    </a>
+                                                </li>
+                                                <a href='http://google.com.vn'>
+                                                    <li>
+                                                        <img src='images/logo/nzxt.gif'>NZXT
+                                                    </li>
+                                                </a>
+                                                <div class='menu-product-show'>
+                                                    <img src ='images/logo/cpu-intel.gif'/>
+                                                   
+
+                                                </div>
+                                            
+                                            </ul>  
+                                      </li>
+                                    </a>
+                                </ul>
+                            </li>
+                            
+                            </div>
+                            <div class='search_bar'>
+                                <form>
+                                      <input class="search_input" placeholder="Nhập thông tin tìm kiếm ..." type="search" value="" name="search" id="search">
+                                      <input class="search_submit" type="submit" value="">
+                                      <span class='icon-search'></span>
+                                </form>
+                            </div>
+                            <a class='cart' href ='#'>                               
+                                    <span class='icon-cart'></span>                                
+                                <ul class='count'>
+                                    <li>0</li>
+                                    <li>0</li>
+                                </ul>
+                            </a> 
+                            <div class='cart-content'>
+                                <div class='wrapper'>
+                                    <div class='header'>
+                                        <h2>GIỎ HÀNG</h2>
+
+                                    </div>
+                                    <div class='body'>
+                                        <ul>
+                                            
+                                            
+                                        </ul>
+
+                                    </div>
+                                    <div class='footer'>
+                                        <span class='checkout'>TỔNG :</span><span class='sum'> 0 đ  </span> 
+                                        <div class='checkout-btn'>THANH TOÁN</div>
+                                    </div>
+                                </div>
+
+                            </div>   
+                        </ul>
+                    </div>
+                </div>                
+            </div>             
+        </header>
+        
+
+        <content >
+            <div class='banner'>
+                <a href='#'>
+                    <img src='images/banner/msi-mainboard.jpg'>
+                </a>      
+            </div>
+            <div class='page-title'>
+                <a href='#'>Bo mạch chủ</a> > MSI</div>
+            <ul class='filter-menu'>
+                <li>
+                    <a href='#'>Nền tảng</a>
+                    <ul>                        
+                        <li>Intel</li>
+                        <li>Amd</li>
+                    </ul>
+                </li>
+                <li>
+                    <a href='#'>Chipset</a>
+                    <ul>                        
+                        <li>B250</li>
+                        <li>B350</li>
+                        <li>X99</li>
+                        <li>Z370</li>
+                        <li>H110</li>
+                    </ul>
+                </li>
+                <li>
+                    <a href='#'>Ram</a>
+                    <ul>                        
+                        <li>DDR3</li>
+                        <li>DDR4</li>
+                    </ul>
+                </li>
+                <li>
+                    <a href='#'>Socket</a>
+                    <ul>                        
+                        <li>LGA1151</li>
+                        <li>AM4</li>
+                        <li>LGA2011</li>
+                    </ul>
+                </li>
+                <li>
+                    <a href='#'>Kích thước</a>
+                    <ul>                        
+                        <li>ATX</li>
+                        <li>mATX</li>
+                        <li>iATX</li>
+                    </ul>
+                </li>
+                <li class='filter-price'>
+                    <a href='#'>Giá</a>
+                    <input class='price-input' type ='text'>
+                    <input class='price-input' type ='text'>
+                    <ul>                        
+                        <li>Từ thấp đến cao</li>
+                        <li>Từ cao đến thấp</li>                        
+                    </ul>
+                </li>
+                <div class='clear'></div>
+            </ul>
+            <div class='product-list'></div>
+            <div class = 'feature-wrapper'>
+                    <div class='feature'>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 325 188">
+                                <title>delivery-fast</title>
+                                <g>
+                                  <path d="M138,27.5a3.5,3.5,0,0,0-3.5-3.5H3.5a3.5,3.5,0,0,0,0,7h131A3.5,3.5,0,0,0,138,27.5Z"></path>
+                                  <path d="M123,65.5a3.5,3.5,0,0,0-3.5-3.5H16.5a3.5,3.5,0,0,0,0,7h103A3.5,3.5,0,0,0,123,65.5Z"></path>
+                                  <path d="M107,104.5a3.5,3.5,0,0,0-3.5-3.5h-75a3.5,3.5,0,0,0,0,7h75A3.5,3.5,0,0,0,107,104.5Z"></path>
+                                  <path d="M323.7,108.8,276.2,71.2,235.5,1.7a3.5,3.5,0,0,0-3-1.7h-65a3.5,3.5,0,0,0-3.2,2.2l-60,150a3.5,3.5,0,0,0,3.2,4.8h108a3.5,3.5,0,0,0,0-7H112.7L169.9,7h60.6l40,68.3a3.5,3.5,0,0,0,.8,1L318,113.2v32l-11.9,5.1a3.5,3.5,0,0,0,1.4,6.7l1.4-.3,14-6a3.5,3.5,0,0,0,2.1-3.2v-36A3.5,3.5,0,0,0,323.7,108.8Z"></path>
+                                  <path d="M247.5,72.3a3.5,3.5,0,0,0,.1-3.4l-24-46a3.5,3.5,0,0,0-3.1-1.9h-38a3.5,3.5,0,0,0-3.3,2.4l-15,46a3.5,3.5,0,0,0,3.3,4.6h77A3.5,3.5,0,0,0,247.5,72.3ZM172.3,67,185,28h33.3l20.3,39Z"></path>
+                                  <circle cx="229" cy="96" r="6"></circle>
+                                  <path d="M262,122a33,33,0,1,0,33,33A33,33,0,0,0,262,122Zm0,59a26,26,0,1,1,26-26A26,26,0,0,1,262,181Z"></path>
+                                </g>
+                        </svg>
+                        <h2>MIỄN PHÍ VẬN CHUYỂN</h2>
+                        
+
+                    </div>
+                    <div class='feature'>
+                         
+                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 326.6 187.8">
+                            <title>returns</title>
+                            <g>
+                              <path d="M220.4,1.2A3.5,3.5,0,0,0,217.8,0H28.9a3.5,3.5,0,0,0-3.5,3L0,183.8a3.5,3.5,0,0,0,3.5,4H192.3a3.5,3.5,0,0,0,3.5-3L221.2,4A3.5,3.5,0,0,0,220.4,1.2ZM145.7,7l-6.7,47.8H88.8L95.5,7Zm43.6,173.8H7.5L32,7H88.4L81.3,57.8a3.5,3.5,0,0,0,3.5,4H142a3.5,3.5,0,0,0,3.5-3L152.7,7h61Z"></path>
+                              <path d="M95.5,154.8H33.8a3.5,3.5,0,1,0,0,7H95.5a3.5,3.5,0,0,0,0-7Z"></path>
+                              <path d="M271,101.3H216.4a3.5,3.5,0,0,0,0,7H271a3.5,3.5,0,0,0,0-7Z"></path>
+                              <path d="M298.8,62.3H226a3.5,3.5,0,0,0,0,7h72.8a3.5,3.5,0,0,0,0-7Z"></path>
+                              <path d="M323.1,23.8H233.7a3.5,3.5,0,0,0,0,7h89.4a3.5,3.5,0,0,0,0-7Z"></path>
+                              <path d="M39.5,109.5l9.4-10.1-4.6,42.8a3.5,3.5,0,0,0,3.1,3.9h.4a3.5,3.5,0,0,0,3.5-3.1l4.5-42.3,7,12.4a3.5,3.5,0,1,0,6.1-3.4L56.5,87.7h-.1l-.3-.5-.2-.2-.4-.3h-.2l-.5-.2H52.1l-.5.2h-.2l-.4.4h-.1L34.4,104.8a3.5,3.5,0,0,0,5.1,4.8Z"></path>
+                              <path d="M93.5,87.7h-.1l-.3-.5-.2-.2-.4-.3h-.2l-.5-.2H89.1l-.4.2h-.2l-.4.4h-.1L71.3,104.8a3.5,3.5,0,0,0,5.1,4.8l9.4-10.1-4.6,42.8a3.5,3.5,0,0,0,3.1,3.9h.4a3.5,3.5,0,0,0,3.5-3.1l4.5-42.3,7,12.4a3.5,3.5,0,1,0,6.1-3.4Z"></path>
+                            </g>
+                          </svg>  
+                          <h2>ĐỔI TRẢ HÀNG MIỄN PHÍ</h2> 
+                    </div>
+                    <div class='feature'>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 324.3 187.8">
+                                <title>support</title>
+                                <g>
+                                  <path d="M320.8,64.9H253.5L173,13.8a11.1,11.1,0,1,0-21.5,0L71.1,64.9H3.5A3.5,3.5,0,0,0,0,68.4V184.3a3.5,3.5,0,0,0,3.5,3.5H320.8a3.5,3.5,0,0,0,3.5-3.5V68.4A3.5,3.5,0,0,0,320.8,64.9ZM155.3,19.7a11.1,11.1,0,0,0,14,0l71.1,45.2H84.1Zm162,161.1H7V71.9H317.3Z"></path>
+                                  <path d="M105.8,143.9v-.6l9.7-7.8c6.5-5.2,10.4-9.7,10.4-18.2,0-6.5-3.9-13.6-14.3-13.6s-14.9,5.8-14.9,14.3l.6.6h5.2l.6-.6c0-5.2,2.6-8.4,8.4-8.4s7.8,3.9,7.8,8.4-2.6,9.1-9.1,14.3l-13,10.4-.6,1.3v5.2l.6.6h29.2l.6-.6v-4.5l-.6-.6Z"></path>
+                                  <path d="M152.5,104.3l-1.3.6-20.8,24.7-.6,1.3v5.2l.6.6h21.4l.6.6v11.7l.6.6h5.2l.6-.6V104.9l-.6-.6Zm0,26-.6.6H137v-.6l14.9-17.5h.6Z"></path>
+                                  <polygon points="190.9 104.3 190.2 104.9 166.8 144.5 166.8 149.1 167.5 149.7 170.7 149.7 171.4 149.1 194.7 109.4 194.7 104.9 194.1 104.3 190.9 104.3"></polygon>
+                                  <polygon points="200.6 104.3 199.9 104.9 199.9 109.4 200.6 110.1 221.4 110.1 221.4 110.7 205.1 143.9 205.1 149.1 205.8 149.7 209 149.7 209.7 149.1 228.5 110.1 228.5 104.9 227.9 104.3 200.6 104.3"></polygon>
+                                </g>
+                        </svg>
+                        <h2>BẢO HÀNH TẬN NƠI</h2>
+                            
+                    </div>
+                    <div class='clear'></div>    
+
+                </div>
+        </content>
+        <footer>
+               
+            <div class='footer-wrapper'>
+                <div class='footer-block'>
+                    <a href='#'><h3>Về TekStorm</h3></a>
+                    <a href='#'><h3>Liên hệ</h3></a>
+
+                </div>
+                <div class='footer-block'>
+                    <a href='#'><h3>Chính sách bảo hành</h3></a>
+                    <a href='#'><h3>Chính sách vận chuyển</h3></a>
+                    
+                </div>
+                <div class='footer-block'>
+                    	TekStorm</br>
+                        57 Nguyễn Văn Huyên - Cầu Giấy - Hà Nội</br>
+                        Tel: (024)38610088/ (024) 38610099 </br>
+                        Email: kinhdoanhle@tekstorm.com
+                            
+                </div>    
+                <div class='footer-block'>
+                    Logo here
+                    <img src='images/facebook.png'/>
+                    <img src='images/youtube.ico'/>
+                        
+                </div>
+            </div>
+        </footer>    
+            
+        
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        
+        <script type="text/javascript" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/DrawSVGPlugin.js?r=6"></script>
+        <script src="js/svg-morpheus.js"></script>
+        <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js'></script>
+        <script src ='https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/plugins/ScrollToPlugin.min.js'></script> 
+        <script src="js/product-line.js"></script>
+        <script src="js/jquery.animateNumber.min.js"></script>
+		
+		<script>
+			
+		</script>
+    </body>
+</html>
